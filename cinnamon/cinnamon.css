@@ -76,7 +76,7 @@ StScrollBar StButton#vhandle:hover
 
 }
 
-StTooltip StLabel {
+#Tooltip {
     border: 1px solid rgba(5,5,5,1);
     border-radius: 4px;
     padding: 2px 12px;
