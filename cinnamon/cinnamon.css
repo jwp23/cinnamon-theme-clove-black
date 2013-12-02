@@ -287,8 +287,9 @@ StScrollBar StButton#vhandle:hover
     background-gradient-start: rgba(95,95,95,0.8);
     background-gradient-end: rgba(5,5,5,0.8);
     box-shadow: inset 0px -9px 3px 5px rgba(5,5,5,0.8);
-    border-top: 2px outset rgba(192,192,192,0.6);
-    border-bottom: 1px #000;
+    border: solid 1px #000;
+    border-left: none;
+    border-right: none;
     font-size: 9pt; 
     font-weight: bold;
     height: 2.1em;
@@ -303,16 +304,19 @@ StScrollBar StButton#vhandle:hover
 	background-gradient-start: rgba(255,0,0,0.05);
 	background-gradient-end: rgba(255,0,0,0.2);
 }
+
 #panelCenter:dnd {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(0,255,0,0.05);
 	background-gradient-end: rgba(0,255,0,0.2);
 }
+
 #panelRight:dnd {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(0,0,255,0.05);
 	background-gradient-end: rgba(0,0,255,0.2);
 }
+
 #panelLeft:ltr {
     padding-right: 4px;
 }
@@ -329,6 +333,12 @@ StScrollBar StButton#vhandle:hover
 #panelRight:rtl {
     padding-right: 0px;
     spacing: 0px;
+}
+
+.panel-top {
+}
+
+.panel-bottom {
 }
 
 .panel-status-button {
