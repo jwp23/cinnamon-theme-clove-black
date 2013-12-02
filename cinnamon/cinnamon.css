@@ -446,14 +446,19 @@ StScrollBar StButton#vhandle:hover
 
 #overview {
     spacing: 12px;
-    background-color: rgba(5,5,5,0.6);
 }
 
 .window-caption {
+    background-color: black;
     color: white;
     spacing: 25px;
 }
 
+.window-caption#selected {
+     background-color: black;
+     color: white;
+     spacing: 25px;
+}
 .workspace-controls {
     visible-height: 32px; /* Amount visible before hovering */
 }
@@ -474,6 +479,25 @@ StScrollBar StButton#vhandle:hover
 
 .workspace-thumbnails {
     spacing: 7px;
+}
+
+.workspace-add-button {
+	background-image: url("add-workspace.png");
+	height: 200px;
+	width: 35px;
+	transition-duration: 300;
+}
+
+.workspace-add-button:hover {
+	background-image: url("add-workspace-hover.png");
+	transition-duration: 300;
+}
+
+.workspace-close-button {
+    background-image: url("close-window.svg");
+    height: 34px;
+    width: 34px;
+    -cinnamon-close-overlap: 20px;
 }
 
 .workspace-thumbnail-indicator {
@@ -505,6 +529,16 @@ StScrollBar StButton#vhandle:hover
     -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
+.window-close-area {
+	background-image: url("trash-icon.png");
+	background-color: rgba(60, 60, 60, 0.8);
+	border: 4px solid rgba(128,128,128,0.8);
+	border-bottom-width: 0px;
+	border-radius: 20px 20px 0px 0px;
+	height: 120px;
+	width: 400px;
+}
+
 .icon-grid {
     spacing: 36px;
     -cinnamon-grid-item-size: 118px;
@@ -522,6 +556,26 @@ StScrollBar StButton#vhandle:hover
     color: white;
     transition-duration: 100;
     text-align: center;
+}
+
+.expo-background {
+	background-gradient-start: #000;
+	background-gradient-end: #AAA;
+	background-gradient-direction: vertical
+}
+
+.workspace-overview-background-shade {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.expo-workspace-thumbnail-frame {
+	border: 1px, rgba(64,64,64,0.9);
+	background-color: rgba(64,64,64,0.9);
+}
+
+.expo-workspace-thumbnail-frame#active {
+	border: 2px, rgba(32,32,32,0.9);
+	background-color: rgba(32,32,32,0.9);
 }
 
 /* ===================================================================
