@@ -2144,7 +2144,13 @@ StScrollBar StButton#vhandle:hover
 /* ===================================================================
  * Applets (applet.js) 
  * ===================================================================*/
-
+.applet-separator {
+	padding: 5px 4px;
+}
+.applet-separator-line {
+	width: 2px;
+	background: rgba(255,255,255,.5);
+}
 .applet-box {
     margin: 1px;
     padding: 1px;
@@ -2165,4 +2171,197 @@ StScrollBar StButton#vhandle:hover
 
 }
 
+.applet-label:hover,
+.applet-box:hover > .applet-label {
+	color: #fff;
+	text-shadow: white 0px 0px 5px;
+}
+.applet-icon {
+	color: #ccc;
+	icon-size: 22px;
+}
+.applet-icon:hover,
+.applet-box:hover > .applet-icon {
+	color: #fff;
+	icon-shadow: white 0px 0px 3px;
+}
 
+/* ===================================================================
+ * Desklets (desklet.js) 
+ * ===================================================================*/
+.desklet {        
+    color: #fff;    
+}
+
+.desklet-with-borders {
+    border: 2px solid #a5a5a5;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: #fff;
+    border-radius-bottomleft: 12px;
+    border-radius-bottomright: 12px;
+    border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+}
+
+.desklet-with-borders-and-header {
+    border: 2px solid #a5a5a5;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: #fff;
+    border-top: 1px;
+    border-radius-bottomleft: 12px;
+    border-radius-bottomright: 12px;
+}
+
+.desklet-header { 
+    border-radius-topleft: 12px;
+    border-radius-topright: 12px;
+    font-size: 10.5pt;
+    border: 2px solid #a5a5a5;
+    border-bottom: 0px;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: #fff;
+    padding: 6px;
+}
+
+.desklet-drag-placeholder { 
+    border: 2px solid #6daa00;
+    background-color: rgba(109,170, 0, 0.3);
+}
+/* ===================================================================
+ * Clock Desklet (desklet.js) 
+ * ===================================================================*/
+.clock-desklet-label {
+}
+
+/* ===================================================================
+ * Workspace OSD
+ * ===================================================================*/
+
+.workspace-osd {
+	color: #ffffff;
+	text-shadow: black 5px 5px 5px;
+	font-weight: bold;
+	font-size: 48pt;	
+}
+
+.expo-workspaces-name-entry {
+	padding: 5px;
+	border-radius: 4px;
+	color: rgb(200, 200, 200);
+	border: 2px solid rgb(136,138,133);
+	background-gradient-start: rgb(128,128,128);
+	background-gradient-end: rgb(85,85,85);
+	background-gradient-direction: vertical;
+	selected-color: black;
+	caret-color: rgb(128, 128, 128);
+	caret-size: 1px;
+	width: 250px;
+	height: 15px;	
+	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
+	text-align: center;	
+}
+
+.expo-workspaces-name-entry#selected {
+	background-gradient-start: rgb(200,200,200);
+	background-gradient-end: white;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+
+.expo-workspaces-name-entry:focus {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-style: italic;
+	transition-duration: 300;
+}
+
+/* ===================================================================
+ * Notification Applet
+ * ===================================================================*/
+
+.notification-applet-padding {
+	padding: .5em 1em;
+}
+
+.notification-applet-container {
+	max-height: 100px;
+}
+
+/* Check Boxes */
+.check-box CinnamonGenericContainer {
+    spacing: .2em;
+    min-height: 30px;
+    padding-top: 2px;
+}
+
+.check-box StBin {
+    width: 24px;
+    height: 18px;
+    background-image: url("checkbox-off.svg");
+}
+
+.check-box:focus StBin {
+    background-image: url("checkbox-off-focused.svg");
+}
+
+.check-box:checked StBin {
+    background-image: url("checkbox.svg");
+}
+
+.check-box:focus:checked StBin {
+    background-image: url("checkbox-focused.svg");
+}
+
+.check-box StLabel {
+   font-weight: normal;
+}
+
+.radiobutton CinnamonGenericContainer {
+    spacing: .2em;
+    height: 26px;
+    padding-top: 2px;
+}
+
+.radiobutton StBin {
+    width: 22px;
+    height: 22px;
+    background-image: url("radiobutton-off.svg");
+    border-radius: 15px;
+}
+
+.radiobutton:focus StBin {
+    background-image: url("radiobutton-off.svg");
+}
+
+.radiobutton:checked StBin {
+    background-image: url("radiobutton.svg");
+}
+
+.radiobutton:focus:checked StBin {
+    background-image: url("radiobutton.svg");
+}
+
+.radiobutton StLabel {
+   padding-top: 4px;
+   font-size: 0.9em;
+   box-shadow: none;
+}
+
+.flashspot {
+   background-color: white;
+}
+
+/* Snap/tile OSD popup */
+
+.snap-osd {
+    font-size: 18pt;
+    border-radius: 24px;
+    background-color: rgba(85, 85, 85, 0.9);
+    border: 2px solid #868686;
+    color: #babdb6;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
