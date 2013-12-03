@@ -2149,7 +2149,7 @@ StScrollBar StButton#vhandle:hover
 }
 .applet-separator-line {
 	width: 2px;
-	background: rgba(255,255,255,.5);
+	background: rgba(255,255,255,.33);
 }
 .applet-box {
     margin: 1px;
