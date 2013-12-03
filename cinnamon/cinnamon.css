@@ -1780,8 +1780,11 @@ StScrollBar StButton#vhandle:hover
     box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.6);
 }
 
-.menu-application-button-label { 
-    padding-left: 5px       
+.menu-application-button-label:ltr { 
+	padding-left: 5px;
+}
+.menu-application-button-label:rtl { 
+	padding-right: 5px;
 }
 
 .menu-category-button {
@@ -1813,8 +1816,12 @@ StScrollBar StButton#vhandle:hover
     border-radius: 4px;
 }
 
-.menu-category-button-label { 
-    padding-left: 5px       
+.menu-category-button-label:ltr {
+	padding-left: 5px;
+}
+.menu-category-button-label:rtl {
+	padding-right: 5px;
+
 }
 
 .menu-category-button-button:hover {
@@ -1829,7 +1836,10 @@ StScrollBar StButton#vhandle:hover
     padding-left: 28px;
     text-align: right;
 }
-
+.menu-selected-app-box:rtl {
+	padding-top: 10px;
+	height: 30px;
+}
 .menu-selected-app-title {
     font-weight: bold;
 }
@@ -1838,10 +1848,12 @@ StScrollBar StButton#vhandle:hover
     max-width: 150px;
 }
 
-.menu-search-box {
-   padding-left: 30px;
+.menu-search-box:ltr {
+	padding-left: 30px;
 }
-
+.menu-search-box:rtl {
+	padding-right: 30px;
+}
 #menu-search-entry {
     padding: 4px 12px;
     border-radius: 4px;
