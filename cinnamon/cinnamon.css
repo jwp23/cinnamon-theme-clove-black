@@ -582,6 +582,7 @@ StScrollBar StButton#vhandle:hover
  * ViewSelector 
  * ===================================================================*/
 
+/*
 #viewSelector {
     spacing: 1em;
     font-size: 12pt;
@@ -615,6 +616,7 @@ StScrollBar StButton#vhandle:hover
     background-color: #c2c7cd;
     border-radius: 0.25em;
 }
+*/
 
 /* ===================================================================
  * Looking Glass 
@@ -841,19 +843,31 @@ StScrollBar StButton#vhandle:hover
 }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
-.calendar-day {
+.calendar-day:ltr {
     border: 1px solid #333333;
     color: #cccccc;
     border-top-width: 0;
     border-left-width: 0;
 }
-.calendar-day-top {
+.calendar-day-top:ltr {
     border-top-width: 1px;
 }
-.calendar-day-left {
+.calendar-day-left:ltr {
     border-left-width: 1px;
 }
 
+.calendar-day:rtl {
+    border: 1px solid #333333;
+    color: #cccccc;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+.calendar-day-top:rtl {
+    border-top-width: 1px;
+}
+.calendar-day-left:rtl {
+    border-left-width: 1px;
+}
 .calendar-work-day {
 }
 
@@ -1129,11 +1143,11 @@ StScrollBar StButton#vhandle:hover
 .ripple-box {
     width: 52px;
     height: 52px;
-    background-image: url("corner-ripple-ltr.png");
+    background-image: url("corner-ripple.png");
 }
 
 .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.png");
+    background-image: url("corner-ripple.png");
 }
 
 .switcher-arrow {
