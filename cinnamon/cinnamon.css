@@ -1993,7 +1993,12 @@ StScrollBar StButton#vhandle:hover
     padding-right: 30px;
     padding-bottom: 10px;
 }
-
+.menu-search-box:ltr {
+	padding-left: 30px;
+}
+.menu-search-box:rtl {
+	padding-right: 30px;
+}
 .sound-volume-menu-item {
     padding: .4em 1.75em;
 }
