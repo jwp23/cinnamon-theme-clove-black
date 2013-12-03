@@ -1,6 +1,6 @@
 Clove-Black is a gothic theme for Cinnamon. It is a remix of dark-glass theme and Minty theme, with some additional modifications to extend, improve, and match color scheme. The panel background is inspired DarkCold's panel.
 
-Clove-Black is compatible with Cinnamon 1.20.
+Clove-Black is compatible with Cinnamon 2.0
 
 Please report issues or suggestions at:
 https://github.com/mordant23/cinnamon-theme-clove-black/issues
@@ -70,7 +70,7 @@ License: Attribution 2.0 Generic (CC BY 2.0)
 Mordant23 (Author of Clove-Black)
 ---
 Darkened Dark Glass Popup Menu hover property.
-Added Dark Glass color scheme to notifications and modal dialogs (May not show with Cinnamon 1.20, but works with Cinnamon compiled from the latest source from github).
+Added Dark Glass color scheme to notifications and modal dialogs.
 Standardized the hover color scheme for Menu Favorite buttons and the various panel buttons.
 Various other tweaks in the color scheme to match the various elements of the theme.
 
@@ -79,7 +79,7 @@ Various other tweaks in the color scheme to match the various elements of the th
 
 LICENSE
 
-Ankh overview icons (overview.png and overview-hover.png): Creative Commons Attribution-Share Alike 3.0 Unported
+Ankh overview icons and menu icon (overview.png, overview-hover.png, and menu.png): Creative Commons Attribution-Share Alike 3.0 Unported
 http://creativecommons.org/licenses/by-sa/3.0/deed.en
 
 thumbnail.png: Attribution 3.0 Unported (CC BY 3.0)
