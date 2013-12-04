@@ -2190,12 +2190,12 @@ StScrollBar StButton#vhandle:hover
  * Desklets (desklet.js) 
  * ===================================================================*/
 .desklet {        
-    color: #fff;    
+    color: #888;    
 }
 
 .desklet-with-borders {
-    border: 2px solid #a5a5a5;
-    background-color: rgba(80, 80, 80, 0.8);
+    border: 2px solid rgba(5,5,5,1);
+    background-color: rgba(5,5,5,0.9);
     color: #fff;
     border-radius-bottomleft: 12px;
     border-radius-bottomright: 12px;
@@ -2204,10 +2204,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .desklet-with-borders-and-header {
-    border: 2px solid #a5a5a5;
-    background-color: rgba(80, 80, 80, 0.8);
+    border: 2px solid rgba(5,5,5,1);
+    background-color: rgba(5,5,5,0.9);
     color: #fff;
     border-top: 1px;
+    border-bottom: rgba(255,255,255);
     border-radius-bottomleft: 12px;
     border-radius-bottomright: 12px;
 }
@@ -2216,9 +2217,9 @@ StScrollBar StButton#vhandle:hover
     border-radius-topleft: 12px;
     border-radius-topright: 12px;
     font-size: 10.5pt;
-    border: 2px solid #a5a5a5;
+    border: 2px solid rgba(5,5,5,1);
     border-bottom: 0px;
-    background-color: rgba(80, 80, 80, 0.8);
+    background-color: rgba(5,5,5,0.9);
     color: #fff;
     padding: 6px;
 }
